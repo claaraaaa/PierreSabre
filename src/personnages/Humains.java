@@ -24,7 +24,7 @@ public class Humains {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + boisson);
+		parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + boisson + ".");
 	}
 	
 	public void boire() {
@@ -33,7 +33,7 @@ public class Humains {
 	
 	public void acheter(String bien, int prix) {
 		if (prix <= argent) {
-			parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous");
+			parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous.");
 			perdreArgent(prix);
 		} else {
 			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + prix + 
@@ -51,14 +51,4 @@ public class Humains {
 	}
 	
 	
-	
-	public static void main(String[] args) {
-		Humains prof = new Humains("Prof", "kombucha", 54);
-		
-		prof.direBonjour();
-		prof.acheter("une boisson", 12);
-		prof.boire();
-		prof.acheter("un jeu", 2);
-		prof.acheter("un kimono", 50);
-	}
 }
