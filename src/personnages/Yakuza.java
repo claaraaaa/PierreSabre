@@ -2,11 +2,12 @@ package personnages;
 
 public class Yakuza extends Humains {
 	private String clan;
-	private int reputation = 0;
+	private int reputation;
 	
 	public Yakuza(String nom, String boisson, int argent, String clan) {
 		super(nom, boisson, argent);
 		this.clan = clan;
+		this.reputation = 0;
 	}
 	
 	public void extorquer(Commercant victime) {
