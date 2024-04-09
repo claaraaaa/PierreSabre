@@ -5,7 +5,7 @@ public class Humains {
 	private String boisson;
 	private int argent;
 	protected int nbConnaissance=0;
-	protected Humains[] memoire = new Humains[3];
+	protected Humains[] memoire = new Humains[30];
 	
 	public Humains(String nom, String boisson, int argent) {
 		this.nom = nom;
@@ -20,6 +20,10 @@ public class Humains {
 	
 	public int getArgent() {
 		return argent;
+	}
+	
+	public String getBoisson() {
+		return boisson;
 	}
 	
 	protected void parler(String texte) {
