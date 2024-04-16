@@ -57,7 +57,7 @@ public class Humains {
 		argent += gain;
 	}
 	
-	private void memoriser(Humains humain) {
+	protected void memoriser(Humains humain) {
 		if (memoire.length > nbConnaissance) {
 			memoire[nbConnaissance] = humain;
 			nbConnaissance++;
@@ -74,7 +74,7 @@ public class Humains {
 		memoriser(humain);
 	}
 	
-	public void faireConnaissanceAvec (Humains autreHumain) {
+	public void faireConnaissanceAvec(Humains autreHumain) {
 		this.direBonjour();
 		autreHumain.repondre(this);
 		this.memoriser(autreHumain);
